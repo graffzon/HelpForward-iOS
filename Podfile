@@ -3,7 +3,10 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'HelpForward' do
+platform :ios, '8.0'
+use_frameworks!
 
+target 'HelpForward' do
+    pod 'Alamofire', '~> 3.0'
 end
 
