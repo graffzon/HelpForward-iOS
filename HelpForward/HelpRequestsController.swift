@@ -41,7 +41,7 @@ class HelpRequestsController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.helpRequestsTable.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell:UITableViewCell = self.helpRequestsTable.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         if let helpRequestTitle = self.helpRequests.arrayObject![indexPath.row]["title"] as? String {
                 cell.textLabel?.text = "\(helpRequestTitle)"
         }
@@ -53,7 +53,7 @@ class HelpRequestsController: UIViewController, UITableViewDelegate, UITableView
         print("You selected cell #\(indexPath.row)!")
     }
     
-    func wait()
+    private func wait()
     {
         NSRunLoop.currentRunLoop().runMode(NSDefaultRunLoopMode, beforeDate: NSDate(timeIntervalSinceNow: 1))
     }
