@@ -9,22 +9,26 @@
 /* Begin PBXBuildFile section */
 		3860260C8A4AD0B1F2A1F274 /* Pods_HelpForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ADE6EF7F2E648A4DDD4FF7 /* Pods_HelpForward.framework */; };
 		43EC02D61CB03AE500E000BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC02D51CB03AE500E000BD /* AppDelegate.swift */; };
-		43EC02D81CB03AE500E000BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC02D71CB03AE500E000BD /* ViewController.swift */; };
 		43EC02DB1CB03AE500E000BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EC02D91CB03AE500E000BD /* Main.storyboard */; };
 		43EC02DD1CB03AE500E000BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EC02DC1CB03AE500E000BD /* Assets.xcassets */; };
 		43EC02E01CB03AE500E000BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EC02DE1CB03AE500E000BD /* LaunchScreen.storyboard */; };
 		43EC02E91CB03E2D00E000BD /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC02E81CB03E2D00E000BD /* SessionController.swift */; };
+		43EC02EB1CB041D100E000BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC02EA1CB041D100E000BD /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		43EC02ED1CB04E0400E000BD /* HelpRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC02EC1CB04E0400E000BD /* HelpRequestsController.swift */; };
+		43EC02EF1CB05D7900E000BD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC02EE1CB05D7900E000BD /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43EC02D21CB03AE400E000BD /* HelpForward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpForward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EC02D51CB03AE500E000BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43EC02D71CB03AE500E000BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43EC02DA1CB03AE500E000BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43EC02DC1CB03AE500E000BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43EC02DF1CB03AE500E000BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43EC02E11CB03AE500E000BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43EC02E81CB03E2D00E000BD /* SessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		43EC02EA1CB041D100E000BD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		43EC02EC1CB04E0400E000BD /* HelpRequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpRequestsController.swift; sourceTree = "<group>"; };
+		43EC02EE1CB05D7900E000BD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		D9ADE6EF7F2E648A4DDD4FF7 /* Pods_HelpForward.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpForward.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51B6258603ECC3215017F99 /* Pods-HelpForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpForward/Pods-HelpForward.debug.xcconfig"; sourceTree = "<group>"; };
 		FCF7E4F04764158E7C157604 /* Pods-HelpForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpForward/Pods-HelpForward.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3860260C8A4AD0B1F2A1F274 /* Pods_HelpForward.framework in Frameworks */,
+				43EC02EF1CB05D7900E000BD /* SwiftyJSON.framework in Frameworks */,
+				43EC02EB1CB041D100E000BD /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +71,6 @@
 			children = (
 				43EC02E71CB03DC500E000BD /* Controllers */,
 				43EC02D51CB03AE500E000BD /* AppDelegate.swift */,
-				43EC02D71CB03AE500E000BD /* ViewController.swift */,
 				43EC02D91CB03AE500E000BD /* Main.storyboard */,
 				43EC02DC1CB03AE500E000BD /* Assets.xcassets */,
 				43EC02DE1CB03AE500E000BD /* LaunchScreen.storyboard */,
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				43EC02E81CB03E2D00E000BD /* SessionController.swift */,
+				43EC02EC1CB04E0400E000BD /* HelpRequestsController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +100,8 @@
 		FEAD3BD90B1D46A0AFAA2FA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43EC02EE1CB05D7900E000BD /* SwiftyJSON.framework */,
+				43EC02EA1CB041D100E000BD /* Alamofire.framework */,
 				D9ADE6EF7F2E648A4DDD4FF7 /* Pods_HelpForward.framework */,
 			);
 			name = Frameworks;
@@ -221,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43EC02D81CB03AE500E000BD /* ViewController.swift in Sources */,
 				43EC02E91CB03E2D00E000BD /* SessionController.swift in Sources */,
 				43EC02D61CB03AE500E000BD /* AppDelegate.swift in Sources */,
+				43EC02ED1CB04E0400E000BD /* HelpRequestsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +343,10 @@
 			baseConfigurationReference = F51B6258603ECC3215017F99 /* Pods-HelpForward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HelpForward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kirill.HelpForward;
@@ -347,6 +359,10 @@
 			baseConfigurationReference = FCF7E4F04764158E7C157604 /* Pods-HelpForward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HelpForward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kirill.HelpForward;

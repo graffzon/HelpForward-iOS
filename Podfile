@@ -7,6 +7,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'HelpForward' do
-    pod 'Alamofire', '~> 3.0'
+    pod 'Alamofire', '3.2.1'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
 

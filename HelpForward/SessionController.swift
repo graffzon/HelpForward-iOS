@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SessionController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
@@ -16,5 +17,20 @@ class SessionController: UIViewController {
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        authoriseUser()
+    }
+    
+    private func authoriseUser() {
+        Alamofire.request(.GET, "http://127.0.0.1:3000/api/users/sign_in", parameters: ["email": emailField.text!, "password": passwordField.text!])
+            .responseJSON { response in
+                
+                if let JSON = response.result.value {
+                    let userId = "\(JSON["id"] as! Int)"
+                    NSUserDefaults.standardUserDefaults().setObject(userId, forKey: "currentUserId")
+                }
+        }
     }
 }
