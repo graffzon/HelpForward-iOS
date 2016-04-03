@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3860260C8A4AD0B1F2A1F274 /* Pods_HelpForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ADE6EF7F2E648A4DDD4FF7 /* Pods_HelpForward.framework */; };
+		43B7FC651CB149FD00D72365 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43B7FC641CB149FD00D72365 /* background.jpg */; };
 		43EC02D61CB03AE500E000BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC02D51CB03AE500E000BD /* AppDelegate.swift */; };
 		43EC02DB1CB03AE500E000BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EC02D91CB03AE500E000BD /* Main.storyboard */; };
 		43EC02DD1CB03AE500E000BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EC02DC1CB03AE500E000BD /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43B7FC641CB149FD00D72365 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
 		43EC02D21CB03AE400E000BD /* HelpForward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpForward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EC02D51CB03AE500E000BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EC02DA1CB03AE500E000BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				43EC02E71CB03DC500E000BD /* Controllers */,
 				43EC02D51CB03AE500E000BD /* AppDelegate.swift */,
 				43EC02D91CB03AE500E000BD /* Main.storyboard */,
+				43B7FC641CB149FD00D72365 /* background.jpg */,
 				43EC02DC1CB03AE500E000BD /* Assets.xcassets */,
 				43EC02DE1CB03AE500E000BD /* LaunchScreen.storyboard */,
 				43EC02E11CB03AE500E000BD /* Info.plist */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43EC02E01CB03AE500E000BD /* LaunchScreen.storyboard in Resources */,
+				43B7FC651CB149FD00D72365 /* background.jpg in Resources */,
 				43EC02DD1CB03AE500E000BD /* Assets.xcassets in Resources */,
 				43EC02DB1CB03AE500E000BD /* Main.storyboard in Resources */,
 			);
